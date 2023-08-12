@@ -5,8 +5,10 @@ jobs:
     check-bats-version:
         runs-on: ubuntu-latest
         steps:
+            - run: pwd
             - uses: actions/checkout@v3
+            - run: echo $GITHUB_WORKSPACE
             - run: uname -r
             - run: pwd
-            - run: echo $GITHUB_WORKSPACE
+            
 
